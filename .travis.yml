@@ -2,16 +2,17 @@ os: linux
 dist: focal
 group: edge
 language: generic
+sudo: required
 git:
   depth: 1
 addons:
   apt:
-    update:
-      - true
     packages:
       - aria2
       - zstd
       - xz-utils
+    update:
+      - true
 services:
   - docker
 before_install:
