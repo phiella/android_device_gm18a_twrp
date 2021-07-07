@@ -69,6 +69,9 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/gome/gm18a
 TARGET_KERNEL_CONFIG := gm18a_defconfig
 
+# Set FSTAB
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6763
 
