@@ -2,14 +2,11 @@ os: linux
 dist: focal
 group: edge
 language: generic
-sudo: required
 git:
   depth: 1
 addons:
   apt:
     update:
-      - true
-    upgrade:
       - true
     packages:
       - aria2
